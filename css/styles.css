@@ -12,10 +12,6 @@
 	animation: gradient 10s ease-in-out infinite;
 }
 
-.icon {
-	border-bottom: gray 3px solid ;
-}
-
 .nav {
 	color: gray;
 }
@@ -29,6 +25,12 @@ h1 {
 	height: 2px;
 	background: gray;
 	margin-bottom: 5px;
+}
+
+.line2 {
+	width: 100%;
+	height: 2px;
+	background: gray;
 }
 
 @keyframes gradient {
