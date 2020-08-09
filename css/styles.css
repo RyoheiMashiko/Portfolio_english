@@ -1,17 +1,33 @@
- *{
+  *{
 	 margin: 0;
 	 padding: 0;
 	 box-sizing: border-box;
  }
 
- body {
-	background: linear-gradient(-45deg, #c3502d, #c52864, #1d4483, #1c9956);
-	animation: change 10s ease-in-out infinite;
-	width: 100%;
-	height: 100vh;
+.container {
+	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	/* background: linear-gradient(45deg,#6e046e, #0a1742); */
+	background-size: 1000% 1000%;
+	/* height: 100vh; */
+	animation: gradient 10s ease-in-out infinite;
 }
 
-@keyframes change {
+.icon {
+	border-bottom: red 3px solid ;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+.line {
+	width: 30px;
+	height: 2px;
+	background: black;
+	margin-bottom: 5px;
+}
+
+@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
