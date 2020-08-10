@@ -4,12 +4,21 @@
 	 box-sizing: border-box;
  }
 
-.container {
+ .wall {
+	background-image:url("../img/sakura.jpeg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+.header-back {
 	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	/* background: linear-gradient(45deg,#6e046e, #0a1742); */
 	background-size: 1000% 1000%;
 	/* height: 100vh; */
 	animation: gradient 10s ease-in-out infinite;
+	opacity: 0.8;
 }
 
 .nav {
@@ -68,6 +77,11 @@ h1 {
 
 .fade-out {
 	animation: fade-out 0.5s ease;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 
