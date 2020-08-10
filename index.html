@@ -14,28 +14,32 @@
   </head>
   <body>
     <header>
-      <div class="bg-white fixed-top">
+      <div class="fixed-top">
         <div class="humburger d-flex flex-column align-items-end">
           <div class="line mr-3 mt-3"></div>
           <div class="line mr-3"></div>
           <div class="line mr-3 mb-3"></div>
         </div>
-        <div class="line2"></div>
-        <div id="dropdown" style="display: none;">
-          <div class="d-block mr-3 mt-3 text-right" href="#About">About</div>
-          <div class="d-block mr-3 mt-3 text-right" href="#Home">Home</div>
-          <div class="d-block mr-3 mt-3 text-right" href="#Project">Project</div>
-          <div class="d-block mr-3 mt-3 mb-3 text-right" href="#Contact">Contact</div>
+        <div id="nav" class="nav fixed-top vh-100 invisible">
+          <div class="close">X</div>
+          <div class="nav-wrapper w-100 d-flex flex-column align-items-center justify-content-center">
+            <p class="text-center mb-0"><a class="text-white" href="#Home">Home</a></p>
+            <p class="text-center mb-0"><a class="text-white" href="#About">About</a></p>
+            <p class="text-center mb-0"><a class="text-white" href="#Project">Project</a></p>
+            <p class="text-center mb-0"><a class="text-white" href="#Contact">Contact</a></p>
+          </div>
         </div>
       </div>
     </header>
-    <section>
+    <section  id="Home" >
       <div class="container text-center text-white vh-100 d-flex flex-column align-items-center justify-content-center" >
-          <h1 class="align-items-middle">Hello,I'm <span>Ryohei Mashiko.</span><br>I'm a front-end developer.</h1>
-          <p class="border border-white d-inline p-1">View my work →</p>
+          <h1 class="align-items-middle mb-3">Hello,I'm <span>Ryohei Mashiko.</span><br>I'm a front-end developer.</h1>
+          <p class="border border-white d-inline p-2">View my work →</p>
       </div>
     </section>
-    <section>
+    <section  id="About" >
+      <h1 class="text-center m-3">About</h1>
+      <div class="under-line mx-auto"></div>
       <p>My project</p>
     </section>
     <!-- Optional JavaScript -->

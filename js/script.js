@@ -1,13 +1,11 @@
-const dropDown = document.getElementById("dropdown");
+const navOverlay = document.getElementById("nav");
 const humburger = document.querySelector(".humburger");
-
-console.log(humburger);
+const closeButton = document.querySelector(".close");
 
 humburger.addEventListener("click", () => {
-  if( dropDown.style.display === "block") {
-    dropDown.style.transition = "all 2s ease-in-out";
-    dropDown.style.display = "none";
-  }else{
-    dropDown.style.display = "block";
-  }
+  navOverlay.classList.remove("invisible");
+} );
+
+closeButton.addEventListener("click", () => {
+  navOverlay.classList.add("invisible");
 } );
