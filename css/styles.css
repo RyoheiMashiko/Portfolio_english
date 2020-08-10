@@ -39,13 +39,23 @@ h1 {
 	background-color: rgba(100, 100, 100, 0.7);
 }
 
-.close {
+.close-button {
+	font-size: 1.5rem;
 	position: absolute;
-	top: 0.7rem;
+	top: 0.3rem;
 	right: 1rem;
 	width: 30px;
 	text-align: center;
 }
+
+.fade-in {
+	animation: fade-in 1s ease;
+}
+
+.fade-out {
+	animation: fade-out 1s ease;
+}
+
 
 @keyframes gradient {
 	0% {
@@ -65,5 +75,14 @@ h1 {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes fade-out{
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }
