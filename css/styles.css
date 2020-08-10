@@ -34,6 +34,12 @@ h1 {
 	background: gray;
 }
 
+.under-line {
+	width: 80%;
+	height: 2px;
+	background: gray;
+}
+
 .nav {
 	font-size: 4rem;
 	background-color: rgba(100, 100, 100, 0.7);
