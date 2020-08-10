@@ -10,9 +10,9 @@ humburger.addEventListener("click", () => {
 } );
 
 closeButton.addEventListener("click", () => {
-  navOverlay.classList.add("fade-out");
   humburger.classList.remove("invisible");
+  navOverlay.classList.add("fade-out");
   const delay= function() {navOverlay.classList.add("invisible")};
-  setTimeout(delay,800);
+  setTimeout(delay,400);
   navOverlay.classList.remove("fade-in");
 } );
