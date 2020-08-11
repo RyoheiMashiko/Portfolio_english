@@ -21,7 +21,9 @@
           <div class="line mr-3 mb-3"></div>
         </div>
         <div id="nav" class="nav fixed-top vh-100 invisible">
-          <div class="close-button text-white">X</div>
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <div class="nav-wrapper w-100 d-flex flex-column align-items-center justify-content-center">
             <p class="text-center mb-0"><a class="text-white" href="#Home">Home</a></p>
             <p class="text-center mb-0"><a class="text-white" href="#About">About</a></p>
@@ -33,7 +35,7 @@
     </header>
     <section  id="Home" >
       <div class="header-back text-center text-white vh-100 d-flex flex-column align-items-center justify-content-center" >
-          <h1 class="align-items-middle mb-3">Hello,I'm <span>Ryohei Mashiko.</span><br>I'm a front-end developer.</h1>
+          <h3 class="align-items-middle mb-3">Hello,I'm <span>Ryohei Mashiko.</span><br>I'm a front-end developer.</h3>
           <p class="border border-white d-inline p-2">View my work →</p>
       </div>
     </section>
@@ -133,20 +135,28 @@
       </div>
     </section>
     <section id="Myproject">
-      <h1 class="text-center p-3 mt-3 text-secondary">My project</h1>
+      <h1 class="text-center p-3 mt-5 text-secondary">My project</h1>
       <div class="under-line mx-auto mb-5"></div>
-      <div class="wrap">
-        <div class="work1">
-          <p class="project-title">Employee Directory</p>
-          <p class="project-exp">I made this project with ..</p>
-          <a class="project-link" href="https://ryoheimashiko.github.io/techdegree-project-8/">Let's see how it works!</a>
-            <img class="works" src="img/project8.png">
+      <div class="project-wrap">
+
+    
+        <div class="project">
+          <img class="project-image" src="img/project8.png">
+          <h5 class="project-title text-center text-white">Employee Directory</h5>
+          <div class="project-overlay">
+            <p class="project-exp">I made this project with ..</p>
+            <a class="project-link" href="https://ryoheimashiko.github.io/techdegree-project-8/">Let's see how it works!</a>
+          </div>
         </div>
-        <div class="work2">
-          <a class="project" href="https://ryoheimashiko.github.io/techdegree-project-7/">
-            <img class="works" src="img/project7.png">
-            <p></p>
-          </a>
+          
+        
+        
+        <!-- 
+          <div class="work2">
+            <a class="project" href="https://ryoheimashiko.github.io/techdegree-project-7/">
+              <img class="works" src="img/project7.png">
+              <p></p>
+            </a>
         </div>
         <div class="work3">
           <a class="project" href="https://ryoheimashiko.github.io/techdegree-project-6/">
@@ -161,7 +171,8 @@
           </a>
         </div>
       </div>
-      </section>
+    </section> 
+    -->
       <section  id="Contact" >
         <h1 class="text-center m-3">Contact</h1>
         <div class="under-line mx-auto"></div>
