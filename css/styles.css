@@ -136,8 +136,14 @@ h1 {
 .project-overlay {
 	width: 100%;
 	height: 100%;
-	/* opacity: 0; */
-	background-color: red;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: gray;
+	opacity: 1;
+	transition: all 0.5s ease;
 }
 
 .project-overlay:hover {
@@ -145,7 +151,6 @@ h1 {
 }
 
 .project-image {
-  position: absolute;
 	width: 100%; 
 }
 
@@ -160,16 +165,18 @@ h1 {
 
 .project-exp {
 	position: absolute;
-	top: 50px;
+	top: 30%;
 	width: 100%;
 	text-align: center;
 }
 
 .project-link {
 	position: absolute;
-	top: 100px;
-	width: 100%;
+	top: 70%;
+	left: 50%;
 	text-align: center;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
 }
 
 
