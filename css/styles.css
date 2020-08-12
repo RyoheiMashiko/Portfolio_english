@@ -2,10 +2,13 @@
 	 margin: 0;
 	 padding: 0;
 	 box-sizing: border-box;
+	 font-family: 'Roboto', sans-serif;
+	 font-family: 'Montez', cursive;
  }
 
  section h1{
 	font-size: 2rem;
+	
  }
 
  header {
@@ -135,20 +138,20 @@ h1 {
 }
 
 .project-overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: red;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: whitesmoke;
+	opacity: 0;
+	transition: all 0.5s ease;
 }
 
 .project-overlay:hover {
-  bottom: 0;
-  height: 100%;
+	opacity: 1;
 }
 
 .project-image {
@@ -188,20 +191,20 @@ h1 {
 }
 
 .contact-overlay {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	background-color: red;
-	transition: all 0.5s ease;
-	opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
 }
 
-.contact-overlay:hover {
- opacity: 1;
+.contact:hover .contact-overlay {
+	bottom: 50%;
+	height: 50%;
 }
 
 .contact-image {
@@ -216,17 +219,48 @@ h1 {
 	padding: 5px;
 } 
 
-.contact-button {
+.contact-p {
 	position: absolute;
 	width: 100%;
-	background: rgba(93, 91, 91,0.6);
-	background-size: 300% 300%;
-	display: block;
-	margin: 0 auto;
-	padding: 1rem;
+	height: 100%;
+	font-size: 2.5rem;
 	color: white;
-	z-index: 2;
+	display: block;
+	text-align: center;
+	padding-top: 25%;
+	padding-bottom: 25%;
 }
+
+.fab {
+	font-size: 2.5rem;
+	color: red;
+  padding: 2rem;
+}
+
+.contact-overlay2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.contact:hover .contact-overlay2 {
+	top: 50%;
+	height: 50%;
+}
+
+
+.sns-overlay {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	}
+
 
 @keyframes gradient {
 	0% {
