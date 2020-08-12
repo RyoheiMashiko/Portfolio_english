@@ -184,21 +184,21 @@ h1 {
 	color: gray;
 }
 
-
-
-
-.work2 {
-	background-color:purple;
+.contact-image {
+	width: 100%;
+	filter:grayscale(100);
+	position: absolute;
+	z-index: -1;
 }
 
-.work3 {
-	background-color:skyblue;
+.contact-button {
+	width: 100%;
+	background: linear-gradient( #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 300% 300%;
+	display: block;
+	margin: 0 auto;
+	padding: 1rem;
 }
-
-.work4 {
-	background-color:green;
-}
-
 
 @keyframes gradient {
 	0% {
