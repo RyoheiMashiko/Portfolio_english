@@ -3,7 +3,7 @@
 	 padding: 0;
 	 box-sizing: border-box;
 	 font-family: 'Roboto', sans-serif;
-	 font-family: 'Montez', cursive;
+	 /* font-family: 'Montez', cursive; */
 	 color: gray;
  }
 
@@ -143,7 +143,6 @@ button:focus {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	margin-bottom: 2rem;
 }
 
 .project-overlay {
@@ -169,15 +168,11 @@ button:focus {
 
 .project-title {
 	position: absolute;
+	top: 30%;
 	width: 100%;
-	height:100%;
-	background-color: black;
-	top: 0;
-	padding: 5px;
-	opacity: 0.8;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	z-index: 2;
+	color: gray;
 } 
 
 .project-exp {
