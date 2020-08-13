@@ -4,6 +4,7 @@
 	 box-sizing: border-box;
 	 font-family: 'Roboto', sans-serif;
 	 font-family: 'Montez', cursive;
+	 color: gray;
  }
 
  section h1{
@@ -53,7 +54,7 @@ h1 {
 
 .under-line {
 	width: 80%;
-	height: 2px;
+	height: 1px;
 	background: gray;
 }
 
@@ -66,18 +67,23 @@ h1 {
 	cursor: pointer;
 }
 
+button:focus {
+	outline: 0;
+}
+
 .close {
-	font-size: 1.5rem;
 	position: absolute;
-	top: 0.5rem;
-	right: 1rem;
-	width: 30px;
-	text-align: center;
+	right: 0.5rem;
 	color: white;
+	font-size: 3rem;
 	opacity: 1;
 }
 
-.close-button:hover {
+.nav-text:hover {
+	opacity: 0.7;
+}
+
+.close:hover {
 	cursor: pointer;
 }
 
@@ -109,7 +115,7 @@ h1 {
 
 .under-line-about {
 	width: 80%;
-	height: 2px;
+	height: 1px;
 	background: white;
 	position: absolute;
 	top: 25%;
@@ -196,9 +202,10 @@ h1 {
 }
 
 .mail-link {
-	border: 1px solid red;
+	color: gray;
+	border: 1px solid gray;
 	margin: 0 auto;
-	padding: 0.5rem;
+	padding: 0 0.5rem 0 0.5rem;
 }
 
 .jump-container {
@@ -214,12 +221,14 @@ footer {
 
 
 .fab {
-	width: auto;
 	height: 1.5rem;
+	padding-top: 1rem;
+	color: gray;
 }
 
 .flag {
 	height: 1rem;
+	margin-top: 0.5rem;
 }
 
 @keyframes gradient {
