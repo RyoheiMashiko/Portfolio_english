@@ -143,7 +143,7 @@ button:focus {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .project-overlay {
@@ -170,10 +170,14 @@ button:focus {
 .project-title {
 	position: absolute;
 	width: 100%;
-	background-color: gray;
+	height:100%;
+	background-color: black;
 	top: 0;
 	padding: 5px;
 	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 } 
 
 .project-exp {
@@ -193,8 +197,17 @@ button:focus {
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
 	color: gray;
+	border: 2px solid #0275d8;
+	transition: all .5s ease-in-out;
+	padding: 0.5rem;
 }
 
+ .project-link:hover {
+	 background-color: #0275d8;
+	 color: white;
+	 text-decoration: none;
+	 opacity: 1;
+ }
 
 .mail-container {
 	display: flex;
@@ -211,7 +224,15 @@ button:focus {
 .jump-container {
 	display: flex;
 	justify-content: center;
-	font-size: 2rem;
+	font-size: 2.5rem;
+}
+
+.fas {
+	background: linear-gradient(#23a6d5,#e73c7e);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 footer {
@@ -228,7 +249,8 @@ footer {
 
 .flag {
 	height: 1rem;
-	margin-top: 0.5rem;
+	margin-top: 0.75rem;
+  border: 1px solid lightgray;
 }
 
 @keyframes gradient {
