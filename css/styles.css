@@ -4,21 +4,24 @@
 	 box-sizing: border-box;
 	 font-family: 'Roboto', sans-serif;
 	 /* font-family: 'Montez', cursive; */
-	 color: gray;
+	 color: rgb(120, 120, 120);
  }
 
- section h1{
+ h1{
 	font-size: 2rem;
-	
+ }
+
+ h2 {
+	 font-size: 1.5rem;
+	 padding: 1rem;
+	 margin: 0;
  }
 
  header {
-	background-image:url("../img/sakura.jpg");
+	/* background-image:url("../img/sakura.jpg"); */
 	/* filter: grayscale(100%); */
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-position:40%;
+	/* background-position:40%;  */
+	/* background-color: black; */
 }
 
 .header-back {
@@ -27,16 +30,10 @@
 	background-size: 600% 600%;
 	/* height: 100vh; */
 	animation: gradient 10s ease-in-out infinite;
-	opacity: 0.8;
 }
 
 .nav {
 	color: gray;
-}
-
-
-h1 {
-	font-size: 1.5rem;
 }
 
 .line {
@@ -46,16 +43,10 @@ h1 {
 	margin-bottom: 5px;
 }
 
-.line2 {
-	width: 100%;
-	height: 2px;
-	background: gray;
-}
-
 .under-line {
-	width: 80%;
 	height: 1px;
-	background: gray;
+	background: rgb(120, 120, 120);
+	margin-bottom: 1rem;
 }
 
 .nav {
@@ -97,7 +88,8 @@ button:focus {
 
 
 .profile-wrap {
-	position: relative;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .profile {
@@ -108,18 +100,12 @@ button:focus {
 
 .about {
 	width: 100%;
- 	position: absolute;
- 	color: white;
- 	top: 0;
 }
 
 .under-line-about {
 	width: 80%;
 	height: 1px;
-	background: white;
-	position: absolute;
-	top: 25%;
-	left: 10%;
+	background-color: red;
 }
 
 .skills-wrap {
