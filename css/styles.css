@@ -263,6 +263,10 @@
 	 opacity: 1;
  }
 
+.message {
+	padding: 1rem;
+}
+
 .mail-container {
 	display: flex;
 	justify-content: center;
