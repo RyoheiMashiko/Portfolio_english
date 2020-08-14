@@ -167,28 +167,21 @@ button:focus {
 }
 
 .project-title {
-	position: absolute;
-	top: 30%;
+  padding-top: 1rem;
 	width: 100%;
 	text-align: center;
-	z-index: 2;
 	color: gray;
 } 
 
 .project-exp {
-	position: absolute;
-	top: 30%;
-	width: 100%;
 	text-align: center;
-	z-index: 2;
 	color: gray;
 }
 
 .project-link {
 	position: absolute;
-	top: 70%;
+	bottom: 5%;
 	left: 50%;
-	text-align: center;
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
 	color: gray;
