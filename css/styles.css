@@ -1,4 +1,4 @@
-  *{
+  * {
 	 margin: 0;
 	 padding: 0;
 	 box-sizing: border-box;
@@ -17,6 +17,11 @@
 	 margin: 0;
  }
 
+ h3 {
+  font-size: 1.25rem;
+
+ }
+
  header {
 	/* background-image:url("../img/sakura.jpg"); */
 	/* filter: grayscale(100%); */
@@ -28,13 +33,38 @@
 	background: linear-gradient(45deg,  #23d5ab,#23a6d5,#e73c7e, #ee7752);
 	/* background: linear-gradient(45deg,#6e046e, #0a1742); */
 	background-size: 600% 600%;
-	/* height: 100vh; */
+	height: 100vh;
 	animation: gradient 10s ease-in-out infinite;
 }
 
-.nav {
-	color: gray;
+.home-wrap {
+	padding-left: 1rem;
 }
+
+.home-link {
+	color: white;
+	border: 1px solid white;
+	margin: 0 auto;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	transition: all .5s ease;
+	text-decoration: none;
+}
+
+.home-link:hover {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+
+.home-link-a:hover {
+	text-decoration: none;
+}
+
+.home-link-container {
+	display: flex;
+	justify-content: right;
+}
+
 
 .line {
 	width: 30px;
@@ -50,25 +80,60 @@
 }
 
 .nav {
-	font-size: 4rem;
+	font-size: 3rem;
 	background-color: rgba(100, 100, 100, 0.7);
 }
 
-.humburger {
-	cursor: pointer;
+.menu-btn {
+ width: 100%;
+ height: 50px;
+ cursor: pointer;
+ transition: all .3s ease-in;
+ position: absolute;
+ z-index: 10000;
+ padding-right: 1rem;
 }
 
-button:focus {
-	outline: 0;
+.menu-btn-burger {
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	transition: all .3s ease-in;
 }
 
-.close {
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+	content: "";
 	position: absolute;
-	right: 0.5rem;
-	color: white;
-	font-size: 3rem;
-	opacity: 1;
+	width: 30px;
+	height: 3px;
+	transition: all .3s ease-in;
+	background-color: white;
+	z0\\
 }
+
+.menu-btn-burger::before{
+	transform: translateY(-10px);
+}
+.menu-btn-burger::after{
+	transform: translateY(10px);
+}
+
+.menu-btn.open .menu-btn-burger {
+	transform: translateX(-50px);
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+	transform: rotate(45deg) translate(35px,-35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+	transform: rotate(-45deg) translate(35px,35px);
+}
+
+
 
 .nav-text:hover {
 	opacity: 0.7;
