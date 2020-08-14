@@ -278,6 +278,19 @@
 	border: 1px solid gray;
 	margin: 0 auto;
 	padding: 0 0.5rem 0 0.5rem;
+	text-decoration: none;
+	transition:  .5s ease-in-out;
+}
+
+.mail-link:hover {
+	text-decoration: none;
+	background-color: #0275d8;
+	border: 1px solid white;
+}
+
+.mail-link p:hover {
+	
+	color: white;
 }
 
 .jump-container {
