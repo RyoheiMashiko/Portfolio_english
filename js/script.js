@@ -11,7 +11,7 @@ menuBtn.addEventListener("click", () => {
     navOverlay.classList.add("fade-in");
     menuOpen= true;
   }else {
-    menuBtn.classList.remove("invisible");
+    // menuBtn.classList.remove("invisible");
     navOverlay.classList.add("fade-out");
     menuBtn.classList.remove("open");
     menuOpen= false;
@@ -21,17 +21,19 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-// menuBtn.addEventListener("click", () => {
-//   navOverlay.classList.remove("invisible");
-//   navOverlay.classList.remove("fade-out");
-//   navOverlay.classList.add("fade-in");
-//   menuBtn.classList.add("invisible");
-// } );
+const navText = document.querySelector(".nav-wrapper");
 
-// closeButton.addEventListener("click", () => {
-//   menuBtn.classList.remove("invisible");
-//   navOverlay.classList.add("fade-out");
-//   const delay= function() {navOverlay.classList.add("invisible")};
-//   setTimeout(delay,400);
-//   navOverlay.classList.remove("fade-in");
-// } );
+navText.addEventListener("click", () => {
+  navOverlay.classList.add("fade-out");
+  menuBtn.classList.remove("open");
+  menuOpen= false;
+  const delay= function() {navOverlay.classList.add("invisible")};
+  setTimeout(delay,400);
+  navOverlay.classList.remove("fade-in");
+})
+
+
+
+ScrollReveal().reveal(".scroll", {
+  reset: true
+});
