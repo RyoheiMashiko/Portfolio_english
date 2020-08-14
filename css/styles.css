@@ -19,7 +19,10 @@
 
  h3 {
   font-size: 1.25rem;
+ }
 
+ p {
+	 margin: 0;
  }
 
  header {
@@ -115,7 +118,6 @@
 	height: 2px;
 	transition: all .3s ease-in;
 	background-color: white;
-	z0\\
 }
 
 .menu-btn-burger::before{
@@ -138,8 +140,6 @@
 .menu-btn.open .menu-btn-burger::after {
 	transform: rotate(-45deg) translate(-35px,-35px);
 }
-
-
 
 .nav-text:hover {
 	opacity: 0.7;
@@ -167,16 +167,11 @@
 	width: 100%;
 	filter: grayscale(100%);
 	background-repeat: no-repeat;
+	margin: 0 auto;
 }
 
-.about {
-	width: 100%;
-}
-
-.under-line-about {
-	width: 80%;
-	height: 1px;
-	background-color: red;
+.about-me {
+	padding: 1rem;
 }
 
 .skills-wrap {
@@ -199,6 +194,11 @@
 .project {
 	position: relative;
 	width: 100%;
+	margin: 0 auto;
+}
+
+.project-wrap {
+	width: 90%;
 	margin: 0 auto;
 }
 
