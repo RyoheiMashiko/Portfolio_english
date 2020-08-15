@@ -41,7 +41,7 @@
 } */
 
 .header-back {
-	background-color: black;
+	background:linear-gradient(180deg,  black,black,black, whitesmoke);
 	height: 100vh;
 }
 

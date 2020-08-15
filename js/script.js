@@ -13,7 +13,7 @@ let menuOpen = false;
 const  passionBar = document.getElementById("pas");
 
 
-//Replay speed of moie 
+//Replay speed of smoie 
 var movieSpeed = document.getElementById( "smoke" );
 movieSpeed.playbackRate = 2;
 
