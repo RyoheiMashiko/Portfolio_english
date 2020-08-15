@@ -49,13 +49,14 @@ video {
 	width: 100%;
 	position: absolute;
 	padding: 0;
+	padding-bottom: 1.5rem;
 	/* z-index: 0; */
 }
 
 .home-wrap {
 	padding-left: 1rem;
 	position: absolute;
-	animation: rotate 1s linear forwards;
+	animation: title-animate 2s ease-in-out;
 }
 
 .home-link {
@@ -353,16 +354,16 @@ footer {
 
 /* Keyframes */
 
-@keyframes rotate {
+@keyframes title-animate {
 	0% {
-		opacity: 0;
-		transform: rotateY(90deg);
-		filter: blur(10px);
+		opacity: 0.2;
+		filter: blur(5px);
+		left: -70%;
 	}
 	100% {
 		opacity: 1;
-		transform: rotateY(0deg);
 		filter: blur(0);
+		left: 0;
 	}
 }
 
@@ -386,6 +387,7 @@ footer {
 		opacity: 1;
 	}
 }
+
 
 @keyframes fade-out{
 	0% {

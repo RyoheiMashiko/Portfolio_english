@@ -13,6 +13,11 @@ let menuOpen = false;
 const  passionBar = document.getElementById("pas");
 
 
+//Replay speed of moie 
+var movieSpeed = document.getElementById( "smoke" );
+movieSpeed.playbackRate = 2;
+
+
 navHome.addEventListener("click", () => {
   navHome.classList.add("bolder");
   navAbout.classList.remove("bolder");
