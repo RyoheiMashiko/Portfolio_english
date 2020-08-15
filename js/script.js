@@ -63,6 +63,16 @@ function Color() {
   let trigger3 = document.getElementById('Contact');
   let triggerY3= trigger3.getBoundingClientRect().top;
 
+
+  console.log("triggerY");
+  console.log(triggerY);
+  console.log("triggerY1");
+  console.log(triggerY1);
+  console.log("triggerY2");
+  console.log(triggerY2);
+  console.log("triggerY3");
+  console.log(triggerY3);
+
  if ( triggerY1 <= 15) {
   menuBtnBurgerTop.classList.add("bg-black");
   menuBtnBurger.classList.add("bg-black");
@@ -81,23 +91,21 @@ function Color() {
   menuBtnBurgerBottom.classList.remove("bg-black");
 }
 
-
-
  if ( triggerY <= 0 && triggerY1 >= 0 ) {
-   navHome.classList.add("bolder");
-   navAbout.classList.remove("bolder");
-   navProject.classList.remove("bolder");
-   navContact.classList.remove("bolder");
+  navHome.classList.add("bolder");
+  navAbout.classList.remove("bolder");
+  navProject.classList.remove("bolder");
+  navContact.classList.remove("bolder");
  } else if ( triggerY1 <= 0 && triggerY2 >= 0 ) {
-   navAbout.classList.add("bolder");
-   navHome.classList.remove("bolder");
-   navProject.classList.remove("bolder");
-   navContact.classList.remove("bolder");
+  navAbout.classList.add("bolder");
+  navHome.classList.remove("bolder");
+  navProject.classList.remove("bolder");
+  navContact.classList.remove("bolder");
  } else if ( triggerY2 <= 0 && triggerY3 >= 0 ) {
-   navProject.classList.add("bolder"); 
-   navAbout.classList.remove("bolder");
-   navHome.classList.remove("bolder");
-   navContact.classList.remove("bolder");
+  navProject.classList.add("bolder"); 
+  navAbout.classList.remove("bolder");
+  navHome.classList.remove("bolder");
+  navContact.classList.remove("bolder");
  }
 
 }

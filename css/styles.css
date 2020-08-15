@@ -199,8 +199,8 @@
     text-align: center;
     white-space: nowrap;
 		background: url(../img/fire.jpg);
-		background-size: 400%;
-		animation: fire 10s linear  infinite;
+		background-size: 250%;
+		animation: fire 10s linear infinite;
 }
 
 #Myproject {
@@ -374,11 +374,9 @@ footer {
 
 @keyframes fire {
 	100% {
-		background-position: 0% 50%;
-		filter: brightness(100);
-		/* width: 100%; */
+		background-position: 0% 100%;
 	}
-	95% {
+	/* 95% {
 		filter: brightness(70);
 	}
 	90% {
@@ -413,10 +411,10 @@ footer {
 	}
 	5% {
 		filter: brightness(50);
-	}
+	} */
 	0% {
-		background-position: 100% -50%;
-		filter: brightness(100);
+		background-position: 100% 0%;
+		/* filter: brightness(100); */
 		/* width: 0%; */
 	}
 }
