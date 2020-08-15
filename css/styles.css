@@ -277,6 +277,7 @@ video {
 	border: 1px solid #0275d8;
 	transition: all .5s ease-in-out;
 	padding: 0.5rem;
+	font-weight: 300;
 }
 
  .project-link:hover {
