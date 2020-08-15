@@ -70,6 +70,12 @@
 	padding-top: 1rem;
 }
 
+.bolder {
+	font-weight: bolder;
+}
+
+
+
 .under-line {
 	height: 1px;
 	background: rgb(120, 120, 120);
@@ -85,13 +91,12 @@
 	text-decoration: none;
 }
 
-
 .menu-btn {
  width: 100%;
  height: 50px;
  cursor: pointer;
  transition: all .3s ease-in;
- padding-right: 1rem;
+ padding-right: 0.5rem;
 }
 
 .menu-btn-burger {
@@ -101,9 +106,8 @@
 	transition: all .3s ease-in;
 }
 
-.menu-btn-burger::before,
-.menu-btn-burger::after {
-	content: "";
+.menu-btn-burger2,
+.menu-btn-burger3 {
 	position: absolute;
 	width: 25px;
 	height: 2px;
@@ -111,10 +115,14 @@
 	background-color: white;
 }
 
-.menu-btn-burger::before{
+.bg-black {
+	background-color: black;
+}
+
+.menu-btn-burger2{
 	transform: translateY(-10px);
 }
-.menu-btn-burger::after{
+.menu-btn-burger3{
 	transform: translateY(10px);
 }
 
@@ -124,12 +132,12 @@
 	box-shadow: none;
 }
 
-.menu-btn.open .menu-btn-burger::before {
-	transform: rotate(45deg) translate(-35px,35px);
+.menu-btn.open .menu-btn-burger2 {
+	transform: rotate(45deg);
 }
 
-.menu-btn.open .menu-btn-burger::after {
-	transform: rotate(-45deg) translate(-35px,-35px);
+.menu-btn.open .menu-btn-burger3 {
+	transform: rotate(-45deg);
 }
 
 .nav-text:hover {
