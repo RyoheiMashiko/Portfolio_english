@@ -5,11 +5,47 @@ const menuBtnBurger = document.querySelector(".menu-btn-burger");
 const closeButton = document.querySelector(".close");
 const menuBtnBurgerTop = document.querySelector(".menu-btn-burger2");
 const menuBtnBurgerBottom = document.querySelector(".menu-btn-burger3");
-const  navHome= document.querySelector(".nav-home");
-const  navAbout= document.querySelector(".nav-about");
-const  navProject= document.querySelector(".nav-project");
-const  navContact= document.querySelector(".nav-contact");
+const navHome= document.querySelector(".nav-home");
+const navAbout= document.querySelector(".nav-about");
+const navProject= document.querySelector(".nav-project");
+const navContact= document.querySelector(".nav-contact");
 let menuOpen = false;
+const  passionBar = document.getElementById("pas");
+
+
+navHome.addEventListener("click", () => {
+  navHome.classList.add("bolder");
+  navAbout.classList.remove("bolder");
+  navProject.classList.remove("bolder");
+  navContact.classList.remove("bolder");
+});
+
+navAbout.addEventListener("click", () => {
+  navAbout.classList.add("bolder");
+  passionBar.classList.add("bar-back");
+  navHome.classList.remove("bolder");
+  navProject.classList.remove("bolder");
+  navContact.classList.remove("bolder");
+ }); 
+ 
+navProject.addEventListener("click", () => {
+  navProject.classList.add("bolder"); 
+  navAbout.classList.remove("bolder");
+  navHome.classList.remove("bolder");
+  navContact.classList.remove("bolder");
+ });
+
+navContact.addEventListener("click", () => {
+  navContact.classList.add("bolder");  
+  navAbout.classList.remove("bolder");
+  navHome.classList.remove("bolder");
+  navProject.classList.remove("bolder");
+});
+
+
+
+
+
 
 menuBtn.addEventListener("click", () => {
   if(!menuOpen) {
@@ -35,9 +71,11 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+
+//Functio of floating up wrapper nav
 const navText = document.querySelector(".nav-wrapper");
 
-navText.addEventListener("click", () => {
+navText.addEventListener("click", (e) => {
   navOverlay.classList.add("fade-out");
   menuBtn.classList.remove("open");
   menuOpen= false;
@@ -46,10 +84,16 @@ navText.addEventListener("click", () => {
   navOverlay.classList.remove("fade-in");
 })
 
+
+//Function of making nav text bold
+
+
+
 // Adding an animation of floating up each element
 ScrollReveal().reveal(".scroll", {
   reset: true
 });
+
 
 //Changing color of hamburger menu icon by background-color
 function Color() {
@@ -62,16 +106,6 @@ function Color() {
   let triggerY2= trigger2.getBoundingClientRect().top;
   let trigger3 = document.getElementById('Contact');
   let triggerY3= trigger3.getBoundingClientRect().top;
-
-
-  console.log("triggerY");
-  console.log(triggerY);
-  console.log("triggerY1");
-  console.log(triggerY1);
-  console.log("triggerY2");
-  console.log(triggerY2);
-  console.log("triggerY3");
-  console.log(triggerY3);
 
  if ( triggerY1 <= 15) {
   menuBtnBurgerTop.classList.add("bg-black");
@@ -91,17 +125,19 @@ function Color() {
   menuBtnBurgerBottom.classList.remove("bg-black");
 }
 
- if ( triggerY <= 0 && triggerY1 >= 0 ) {
+
+ if ( triggerY <= 1 && triggerY1 >= 1 ) {
   navHome.classList.add("bolder");
   navAbout.classList.remove("bolder");
   navProject.classList.remove("bolder");
   navContact.classList.remove("bolder");
- } else if ( triggerY1 <= 0 && triggerY2 >= 0 ) {
+ } else if ( triggerY1 <= 1 && triggerY2 >= 1 ) {
   navAbout.classList.add("bolder");
+  passionBar.classList.add("bar-back");
   navHome.classList.remove("bolder");
   navProject.classList.remove("bolder");
   navContact.classList.remove("bolder");
- } else if ( triggerY2 <= 0 && triggerY3 >= 0 ) {
+ } else if ( triggerY2 <= 1 && triggerY3 >= 1 ) {
   navProject.classList.add("bolder"); 
   navAbout.classList.remove("bolder");
   navHome.classList.remove("bolder");
