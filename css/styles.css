@@ -90,7 +90,7 @@ video {
 
 .under-line {
 	height: 1px;
-	background: rgb(120, 120, 120);
+	background: rgb(50, 50, 50);
 	margin-bottom: 1rem;
 }
 
@@ -200,7 +200,7 @@ video {
 }
 
 .bar-back {
-	  display: -ms-flexbox;
+	  display: flex;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -273,7 +273,7 @@ video {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
-	color: gray;
+	color: rgb(50, 50, 50);
 	border: 1px solid #0275d8;
 	transition: all .5s ease-in-out;
 	padding: 0.5rem;
@@ -298,12 +298,13 @@ video {
 }
 
 .mail-link {
-	color: gray;
-	border: 1px solid gray;
+	color: rgb(50, 50, 50);
+	border: 1px solid rgb(50, 50, 50);
 	margin: 0 auto;
 	padding: 0 0.5rem 0 0.5rem;
 	text-decoration: none;
 	transition:  .5s ease-in-out;
+	font-weight: bolder;
 }
 
 .mail-link:hover {
@@ -338,14 +339,14 @@ video {
 
 footer {
 	background-color:whitesmoke;
-	color: gray;
+	color: rgb(50, 50, 50);
 }
 
 
 .fab {
 	height: 1.5rem;
 	padding-top: 1rem;
-	color: gray;
+	color: rgb(50, 50, 50);
 	transition: .5s ease;
 }
 
