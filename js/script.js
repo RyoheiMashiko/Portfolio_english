@@ -50,34 +50,53 @@ ScrollReveal().reveal(".scroll", {
 //Changing color of hamburger menu icon by background-color
 function Color() {
 
-  let trigger = document.getElementById('About');
+  let trigger = document.getElementById('Home');
   let triggerY= trigger.getBoundingClientRect().top;
-  console.log(triggerY);
- 
- if ( triggerY <= 15) {
-    menuBtnBurgerTop.classList.add("bg-black");
-    menuBtnBurger.classList.add("bg-black");
-    menuBtnBurgerBottom.classList.add("bg-black");
- } else if (triggerY <= 16 ) {
-   menuBtnBurgerTop.classList.add("bg-black");
- } else if ( triggerY <= 26) {
-   menuBtnBurger.classList.add("bg-black");
-   menuBtnBurgerTop.classList.remove("bg-black");
- } else if (triggerY <= 35) {
+  let trigger1 = document.getElementById('About');
+  let triggerY1= trigger1.getBoundingClientRect().top;
+  let trigger2 = document.getElementById('Myproject');
+  let triggerY2= trigger2.getBoundingClientRect().top;
+  let trigger3 = document.getElementById('Contact');
+  let triggerY3= trigger3.getBoundingClientRect().bottom;
+
+ if ( triggerY1 <= 15) {
+  menuBtnBurgerTop.classList.add("bg-black");
+  menuBtnBurger.classList.add("bg-black");
+  menuBtnBurgerBottom.classList.add("bg-black");
+ } else if (triggerY1 <= 16 ) {
+  menuBtnBurgerTop.classList.add("bg-black");
+ } else if ( triggerY1 <= 26) {
+  menuBtnBurger.classList.add("bg-black");
+  menuBtnBurgerTop.classList.remove("bg-black");
+ } else if (triggerY1 <= 35) {
   menuBtnBurgerBottom.classList.add("bg-black");
   menuBtnBurger.classList.remove("bg-black");
- } else if ( triggerY >= 36 ) {
+ } else if ( triggerY1 >= 36 ) {
   menuBtnBurger.classList.remove("bg-black");
   menuBtnBurgerTop.classList.remove("bg-black");
   menuBtnBurgerBottom.classList.remove("bg-black");
 }
 
-const  navHome= document.querySelector("nav-home");
-const  navAbout= document.querySelector("nav-about");
-const  navProject= document.querySelector("nav-project");
-const  navContect= document.querySelector("nav-contact");
+const  navHome= document.querySelector(".nav-home");
+const  navAbout= document.querySelector(".nav-about");
+const  navProject= document.querySelector(".nav-project");
+const  navContact= document.querySelector(".nav-contact");
 
-if ( triggerY )
-} 
+console.log(triggerY1);
+console.log(triggerY2);
+console.log(triggerY3);
+
+ if ( triggerY <= 0 && triggerY1 >= 0 ) {
+   navHome.classList.add("bolder");
+ } else if ( triggerY1 <= 0 && triggerY2 >= 0 ) {
+   navAbout.classList.add("bolder");
+ } else if ( triggerY2 <= 0 && triggerY3 >= 0 ) {
+  navProject.classList.add("bolder");
+ } else {
+  navContact.classList.add("bolder");
+}
+   
+}
+
 
 window.addEventListener('scroll', Color);

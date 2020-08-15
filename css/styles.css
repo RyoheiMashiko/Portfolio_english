@@ -199,8 +199,8 @@
     text-align: center;
     white-space: nowrap;
 		background: url(../img/fire.jpg);
-		background-size: 200%;
-		animation: fire 2s linear  infinite;
+		background-size: 400%;
+		animation: fire 10s linear  infinite;
 }
 
 #Myproject {
@@ -340,6 +340,8 @@ footer {
 	font-size: 0.5rem;
 }
 
+/* Keyframes */
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -373,21 +375,48 @@ footer {
 @keyframes fire {
 	100% {
 		background-position: 0% 50%;
-		filter: brightness(3);
-		width: 100%;
+		filter: brightness(100);
+		/* width: 100%; */
+	}
+	95% {
+		filter: brightness(70);
 	}
 	90% {
+		filter: brightness(50);
+	}
+	85% {
+		filter: brightness(40);
+	}
+	80% {
+		filter: brightness(20);
+	}
+	70% {
 		filter: brightness(2);
 	}
+	60% {
+		filter: brightness(1);
+	}
 	50% {
+		filter: brightness(2);
+	}
+	40% {
+		filter: brightness(1);
+	}
+	30% {
+		filter: brightness(2);
+	}
+	20% {
 		filter: brightness(1);
 	}
 	10% {
-		filter: brightness(0.5);
+		filter: brightness(2);
+	}
+	5% {
+		filter: brightness(50);
 	}
 	0% {
 		background-position: 100% -50%;
-		filter: brightness(0);
-		width: 0%;
+		filter: brightness(100);
+		/* width: 0%; */
 	}
 }
