@@ -5,6 +5,10 @@ const menuBtnBurger = document.querySelector(".menu-btn-burger");
 const closeButton = document.querySelector(".close");
 const menuBtnBurgerTop = document.querySelector(".menu-btn-burger2");
 const menuBtnBurgerBottom = document.querySelector(".menu-btn-burger3");
+const  navHome= document.querySelector(".nav-home");
+const  navAbout= document.querySelector(".nav-about");
+const  navProject= document.querySelector(".nav-project");
+const  navContact= document.querySelector(".nav-contact");
 let menuOpen = false;
 
 menuBtn.addEventListener("click", () => {
@@ -57,7 +61,7 @@ function Color() {
   let trigger2 = document.getElementById('Myproject');
   let triggerY2= trigger2.getBoundingClientRect().top;
   let trigger3 = document.getElementById('Contact');
-  let triggerY3= trigger3.getBoundingClientRect().bottom;
+  let triggerY3= trigger3.getBoundingClientRect().top;
 
  if ( triggerY1 <= 15) {
   menuBtnBurgerTop.classList.add("bg-black");
@@ -77,26 +81,35 @@ function Color() {
   menuBtnBurgerBottom.classList.remove("bg-black");
 }
 
-const  navHome= document.querySelector(".nav-home");
-const  navAbout= document.querySelector(".nav-about");
-const  navProject= document.querySelector(".nav-project");
-const  navContact= document.querySelector(".nav-contact");
 
-console.log(triggerY1);
-console.log(triggerY2);
-console.log(triggerY3);
 
  if ( triggerY <= 0 && triggerY1 >= 0 ) {
    navHome.classList.add("bolder");
+   navAbout.classList.remove("bolder");
+   navProject.classList.remove("bolder");
+   navContact.classList.remove("bolder");
  } else if ( triggerY1 <= 0 && triggerY2 >= 0 ) {
    navAbout.classList.add("bolder");
+   navHome.classList.remove("bolder");
+   navProject.classList.remove("bolder");
+   navContact.classList.remove("bolder");
  } else if ( triggerY2 <= 0 && triggerY3 >= 0 ) {
-  navProject.classList.add("bolder");
- } else {
-  navContact.classList.add("bolder");
-}
-   
-}
+   navProject.classList.add("bolder"); 
+   navAbout.classList.remove("bolder");
+   navHome.classList.remove("bolder");
+   navContact.classList.remove("bolder");
+ }
 
-
+}
 window.addEventListener('scroll', Color);
+
+window.onscroll = function() {
+ // const  navContact= document.querySelector(".nav-contact");
+ if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+   navContact.classList.add("bolder");  
+   navAbout.classList.remove("bolder");
+   navHome.classList.remove("bolder");
+   navProject.classList.remove("bolder");
+ }
+};
+
