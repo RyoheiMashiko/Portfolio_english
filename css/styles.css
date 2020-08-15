@@ -70,14 +70,6 @@
 	padding-top: 1rem;
 }
 
-
-.line {
-	width: 30px;
-	height: 2px;
-	background: white;
-	margin-bottom: 5px;
-}
-
 .under-line {
 	height: 1px;
 	background: rgb(120, 120, 120);
@@ -93,9 +85,6 @@
 	text-decoration: none;
 }
 
-.nav-text a:hover {
-	color: yellow;
-}
 
 .menu-btn {
  width: 100%;
