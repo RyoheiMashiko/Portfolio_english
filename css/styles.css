@@ -3,7 +3,6 @@
 	 padding: 0;
 	 box-sizing: border-box;
 	 font-family: 'Roboto', sans-serif;
-	 /* font-family: 'Montez', cursive; */
 	 color: rgb(120, 120, 120);
  }
 
@@ -27,14 +26,12 @@
 
  p {
 	 margin: 0;
+	 font-weight: lighter;
  }
 
- header {
-	/* background-image:url("../img/sakura.jpg"); */
-	/* filter: grayscale(100%); */
-	/* background-position:40%;  */
-	/* background-color: black; */
-}
+ a {
+	 font-weight: lighter;
+ }
 
 .header-back {
 	background: linear-gradient(45deg,  #23d5ab,#23a6d5,#e73c7e, #ee7752);
@@ -162,7 +159,6 @@
 	animation: fade-out 0.5s ease;
 }
 
-
 .profile-wrap {
 	width: 80%;
 	margin: 0 auto;
@@ -193,6 +189,23 @@
 .progress {
 	border-radius: 0;
 }
+
+.bar-back {
+	  display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+		background: url(../img/fire.jpg);
+		background-size: 200%;
+		animation: fire 2s linear  infinite;
+}
+
 #Myproject {
 	background-color: whitesmoke;
 }
@@ -226,7 +239,8 @@
 }
 
 .project-overlay:hover {
-	opacity: 1;
+	opacity:1;
+	cursor: pointer;
 }
 
 .project-image {
@@ -251,7 +265,7 @@
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
 	color: gray;
-	border: 2px solid #0275d8;
+	border: 1px solid #0275d8;
 	transition: all .5s ease-in-out;
 	padding: 0.5rem;
 }
@@ -265,6 +279,7 @@
 
 .message {
 	padding: 1rem;
+	font-style: italic;
 }
 
 .mail-container {
@@ -289,7 +304,6 @@
 }
 
 .mail-link p:hover {
-	
 	color: white;
 }
 
@@ -356,5 +370,27 @@ footer {
 	}
 	100% {
 		opacity: 0;
+	}
+}
+
+@keyframes fire {
+	100% {
+		background-position: 0% 50%;
+		filter: brightness(3);
+		width: 100%;
+	}
+	90% {
+		filter: brightness(2);
+	}
+	50% {
+		filter: brightness(1);
+	}
+	10% {
+		filter: brightness(0.5);
+	}
+	0% {
+		background-position: 100% -50%;
+		filter: brightness(0);
+		width: 0%;
 	}
 }
