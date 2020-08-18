@@ -6,6 +6,10 @@
 	 color: rgb(50, 50, 50);
  }
 
+ html{
+  scroll-behavior: smooth;
+}
+
  h1{
 	font-size: 2rem;
  }
@@ -364,7 +368,7 @@ footer {
 }
 
 .fab:hover {
-	color: white;
+	color: #0275d8;
 	}
 
 .flag {
@@ -376,6 +380,7 @@ footer {
 .copyright {
 	font-size: 0.5rem;
 }
+
 
 /* Keyframes */
 
@@ -501,11 +506,6 @@ footer {
 	 .home-wrap {
 		animation: title-animate 2s ease-in-out;
 	}
-
-	.header-back {
-		background:black;
-		height: 100vh;
-	}
 	 
 	 .menu-btn {
 		 padding-right: 1rem;
@@ -530,6 +530,7 @@ footer {
 	 .menu-btn.open .menu-btn-burger {
 		transform: translateX(100px);
 	}
+	
 	.home-wrap {
 		padding-left: 1.5rem;
 	}
@@ -570,6 +571,15 @@ footer {
 	.project-wrap {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		padding-bottom: 5rem;
+	}
+
+	.jump-container {
+		padding-bottom: 2.5rem;
+	}
+
+	#footer-wrapper {
+		padding-top: 1.5rem;
 	}
 }
 
@@ -603,15 +613,15 @@ footer {
 	 }
 
 	 .home-wrap {
-		animation: title-animate 2s ease-out;
+		animation: title-animate 2s ease-in-out;
 	}
 
-	video {
-		width: 50%;
-		position: absolute;
-		padding: 0;
-		padding-bottom: 1.5rem;
-		/* z-index: 0; */
+	 .header-back {
+		 background: black;
+	 }
+
+	 video {
+		width: 80%;
 	}
 	 
 	 .menu-btn {
@@ -634,8 +644,8 @@ footer {
 		 margin-bottom: 20px;
 	 }
 
-	 .menu-btn.open .menu-btn-burger {
-		transform: translateX(100px);
+	 .under-line {
+		margin-bottom: 2.5rem;
 	}
 
 	.home-wrap {
@@ -651,7 +661,6 @@ footer {
 	.profile-wrap {
 		width: 30%;
 		margin: 0 auto;
-		padding-top: 2.5rem;
 	}
 	
 	.about-me {
@@ -678,15 +687,16 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-
-	.project {
-	}
-
-	.project-overlay {
-
-	}
-
-	.project-link {
 	
+	.jump-container {
+		padding-bottom: 3.5rem;
+	}
+
+}
+
+
+@media(min-width:1025px) {
+	video {
+		width: 60%;
 	}
 }
