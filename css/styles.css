@@ -222,6 +222,7 @@ video {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
+	height: auto;
 }
 
 .project-wrap {
@@ -251,8 +252,20 @@ video {
 	cursor: pointer;
 }
 
+
 .project-image {
 	width: 100%; 
+}
+
+.next-pic {
+	filter: grayscale(100);
+
+}
+
+.next-text {
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .project-title {
@@ -488,10 +501,16 @@ footer {
 	 .home-wrap {
 		animation: title-animate 2s ease-in-out;
 	}
+
+	.header-back {
+		background:black;
+		height: 100vh;
+	}
 	 
 	 .menu-btn {
 		 padding-right: 1rem;
 		 padding-top: 0.5rem;
+		 justify-content: space-between;
 	 }
 
 	  .menu-btn-burger {
@@ -533,6 +552,7 @@ footer {
 		margin-right: 1.5rem;
 		margin-left: 0.5rem;
 	}
+
 	.ability {
 		width: 50%;
 		margin: 0;
@@ -550,14 +570,113 @@ footer {
 	.project-wrap {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		border: salmon 1px solid ;
+	}
+}
+
+
+@media(min-width:1024px) {
+	h1{
+		font-size: 4.5rem;
+	 }
+	
+	 h2 {
+		 font-size:3rem;
+		 padding: 2rem;
+		 margin: 0;
+	 }
+	
+	 h3 {
+		font-size: 2rem;
+	 }
+	
+	 h5 {
+		 margin: 0;
+	 }
+	
+	 p {
+		 margin: 0;
+		 font-weight: lighter;
+	 }
+	
+	 a {
+		 font-weight: lighter;
+	 }
+
+	 .home-wrap {
+		animation: title-animate 2s ease-out;
 	}
 
-	.project-wrap div:nth-last-child(1) {
-		grid-column-start: 1; 
-		grid-column-end: 3;
+	video {
 		width: 50%;
+		position: absolute;
+		padding: 0;
+		padding-bottom: 1.5rem;
+		/* z-index: 0; */
+	}
+	 
+	 .menu-btn {
+		 padding-right: 1rem;
+		 padding-top: 0.5rem;
+		 justify-content: space-between;
+	 }
+
+	  .menu-btn-burger {
+		 width: 40px;
+		 height: 3px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+	 }
+	 
+	 .menu-btn-burger2,
+	 .menu-btn-burger3 {
+		 width: 40px;
+		 height: 3px;
+		 margin-bottom: 20px;
+	 }
+
+	 .menu-btn.open .menu-btn-burger {
+		transform: translateX(100px);
+	}
+
+	.home-wrap {
+		padding-left: 2.5rem;
+	}
+	
+	.profile-container {
+		display: flex;
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.profile-wrap {
+		width: 30%;
+		margin: 0 auto;
+		padding-top: 2.5rem;
+	}
+	
+	.about-me {
+		width: 50%;
+		margin: 0;
+		margin-left: 2.5rem;
+	}
+
+	.ability {
+		width: 50%;
+		margin: 0;
+		margin-right: 2.5rem;
+	}
+
+	.row:first-child  {
+		padding-top: 2rem;
+	}
+
+	.ability .row {
+		margin-bottom: 0.5rem;
+	}
+
+	.project-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.project {
