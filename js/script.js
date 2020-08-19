@@ -2,7 +2,6 @@
 const navOverlay = document.getElementById("nav");
 const menuBtn = document.querySelector(".menu-btn");
 const menuBtnBurger = document.querySelector(".menu-btn-burger");
-const closeButton = document.querySelector(".close");
 const menuBtnBurgerTop = document.querySelector(".menu-btn-burger2");
 const menuBtnBurgerBottom = document.querySelector(".menu-btn-burger3");
 const navHome= document.querySelector(".nav-home");
@@ -47,11 +46,6 @@ navContact.addEventListener("click", () => {
   navProject.classList.remove("bolder");
 });
 
-
-
-
-
-
 menuBtn.addEventListener("click", () => {
   if(!menuOpen) {
     menuBtn.classList.add("open");
@@ -83,16 +77,14 @@ const navText = document.querySelector(".nav-wrapper");
 navText.addEventListener("click", (e) => {
   navOverlay.classList.add("fade-out");
   menuBtn.classList.remove("open");
+  menuBtnBurger.classList.remove("bg-white");
+  menuBtnBurgerTop.classList.remove("bg-white");
+  menuBtnBurgerBottom.classList.remove("bg-white");
   menuOpen= false;
   const delay= function() {navOverlay.classList.add("invisible")};
   setTimeout(delay,400);
   navOverlay.classList.remove("fade-in");
-})
-
-
-//Function of making nav text bold
-
-
+});
 
 // Adding an animation of floating up each element
 ScrollReveal().reveal(".scroll", {
@@ -148,8 +140,8 @@ function Color() {
   navHome.classList.remove("bolder");
   navContact.classList.remove("bolder");
  }
-
 }
+
 window.addEventListener('scroll', Color);
 
 window.onscroll = function() {
