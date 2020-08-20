@@ -274,6 +274,7 @@ justify-content: center;
 
 .project-title {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 	width: 100%;
 	text-align: center;
 } 
@@ -590,6 +591,10 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding-bottom: 5rem;
+	}
+
+	.project-title {
+		padding-bottom: 0.5rem;
 	}
 
 	.mail-link {
