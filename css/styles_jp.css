@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Noto Sans JP";
   color: rgb(50, 50, 50);
 }
 
@@ -30,11 +30,11 @@ h5 {
 
 p {
   margin: 0;
-  font-weight: lighter;
+  /* font-weight: lighter; */
 }
 
 a {
-  font-weight: lighter;
+  /* font-weight: lighter; */
 }
 
 /* .header-back {
