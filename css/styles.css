@@ -377,6 +377,7 @@ footer {
 
 .flag {
 	height: 1rem;
+	width: 1.5rem;
 	border: 1px solid lightgray;
 	transition: .5s ease;
 }
