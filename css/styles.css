@@ -247,7 +247,7 @@ video {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background-color: whitesmoke;
+	background-color: white;
 	opacity: 0;
 	transition: all 0.5s ease;
 }
@@ -256,7 +256,6 @@ video {
 	opacity:1;
 	cursor: pointer;
 }
-
 
 .project-image {
 	width: 100%; 
